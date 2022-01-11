@@ -44,6 +44,9 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+
 }
 
 .btn{
@@ -145,8 +148,6 @@ nav li:hover{
 
 /* about me start*/
 #blog-about{
-    min-height: 95vh;
-    padding: 5rem 1rem;
     background-color: #4c4c4c;
 }
 
@@ -190,10 +191,6 @@ nav li:hover{
 /* about me end*/
 
 /*--Archives section start--*/
-#archives{
-    padding: 5rem 1rem;
-    min-height: 95vh;
-}
 
 .archives-container{
     display: flex;
@@ -225,6 +222,139 @@ nav li:hover{
 }
 
 /*--Archives section end--*/
+
+/*--blog post section start--*/
+
+.blog-posts-heading{
+    margin-bottom: 5rem;
+}
+
+.blog-post{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: transform 0.4s;
+}
+
+.blog-post:hover{
+    transform: scale(1.1);
+}
+
+.blog-post-aside{
+    flex: 1;
+}
+
+.blog-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.blog-head{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-sub-head{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog-desc{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.blog-btn{
+    width: 30%;
+}
+
+.blog-img{
+    width: 100%;
+    height: 100%;
+}
+
+/*--blog post section end--*/
+
+/*--contact section start--*/
+#contact-section {
+    background-color: #4c4c4c;
+    min-height: 90vh;
+}
+
+#contact-form {
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.form-control label {
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+
+input,
+textarea {
+    flex: 0.7;
+    width: 40rem;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+textarea {
+    resize: none;
+    height: 12vh;
+}
+
+.form-btn-field {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-btn {
+    width: 30%;
+}
+
+/*--contact section end--*/
+
+/*--footer section start--*/
+footer{
+    background-color: black;
+    padding: 1rem;
+    color: #fff;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+}
+/*--footer section end--*/
 
 /* responsive starts here*/
 
@@ -262,6 +392,17 @@ nav li:hover{
     }
 
     #archives{
+        min-height: auto;
+    }
+
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 80%;
+
+    }
+
+    #contact-section{
         min-height: auto;
     }
 }
@@ -309,6 +450,35 @@ nav li:hover{
 
     .archives-container-lists{
         flex-wrap: wrap;
+    }
+
+    .blog-post{
+        width: 90%;
+    }
+
+    #contact-form{
+        width: 90%;
+    }
+
+    .form-control{
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        max-width: 100%;
+    }
+
+    .form-control label{
+        margin-bottom: 0.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    #menubar2{
+        display: flex;
     }
 }
 

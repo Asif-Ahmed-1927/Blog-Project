@@ -22,7 +22,7 @@
         </figure>
 
         <nav aria-label="main menu">
-            <ul role="menubar">
+            <ul role="menubar" aria-label="main menu">
                 <li role="none">
                     <a href="#" class="nav-link" role="menuitem">Home</a>
                 </li>
@@ -115,9 +115,122 @@
 
            <!--Archives section end-->
 
-       </main>
+             <!--blog post section start-->
+             <section id="blog-posts" class="section-center">
+                <h2 class="section-head blog-posts-heading">Blog Post</h2>
+                 <div class="blog-post">
+                     <aside class="blog-post-aside">
+                         <img src="./images/laptop1.jpg" alt="laptop" class="blog-img">
+                     </aside>
+                     <article class="blog-content">
+                         <h2 class="blog-head text-justify">Blog 1</h2>
+                         <h3 class="blog-sub-head text-justify">Sub heading</h3>
+                         <p class="blog-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat tempore saepe voluptatibus quisquam suscipit aperiam ipsum ducimus voluptate temporibus omnis. Dolore dolores debitis temporibus vero.
+                         </p>
+                         <button type="submit" class="btn blog-btn">Learn More</button>
+                     </article>
+                 </div>
+                 <br>
 
-        <!--main ends from here-->
+                 <div class="blog-post">
+                    <aside class="blog-post-aside">
+                        <img src="./images/laptop1.jpg" alt="laptop" class="blog-img">
+                    </aside>
+                    <article class="blog-content">
+                        <h2 class="blog-head text-justify">Blog 2</h2>
+                        <h3 class="blog-sub-head text-justify">Sub heading</h3>
+                        <p class="blog-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat tempore saepe voluptatibus quisquam suscipit aperiam ipsum ducimus voluptate temporibus omnis. Dolore dolores debitis temporibus vero.
+                        </p>
+                        <button type="submit" class="btn blog-btn">Learn More</button>
+                    </article>
+                </div>
+                <br>
+
+                <div class="blog-post">
+                    <aside class="blog-post-aside">
+                        <img src="./images/laptop1.jpg" alt="laptop" class="blog-img">
+                    </aside>
+                    <article class="blog-content">
+                        <h2 class="blog-head text-justify">Blog 3</h2>
+                        <h3 class="blog-sub-head text-justify">Sub heading</h3>
+                        <p class="blog-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat tempore saepe voluptatibus quisquam suscipit aperiam ipsum ducimus voluptate temporibus omnis. Dolore dolores debitis temporibus vero.
+                        </p>
+                        <button type="submit" class="btn blog-btn">Learn More</button>
+                    </article>
+                </div>
+             </section>
+
+             <!--blog post section end-->
+
+             <!--contact section start-->
+             <section id="contact-section" class="section-center">
+                <h2 class="section-head blog-posts-heading text-white">Contact Me</h2>
+                <form action="" id="contact-form">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email">
+                    </div>
+
+                    <div class="form-control form-btn-field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                        
+                    </div>
+                </form>
+
+             </section>
+             <!--contact section end-->
+
+       </main>
+           <!--main ends from here-->
+
+           <!--footer start from here-->
+           <footer>
+               <p class="copyright-text">Copyright &copy; by Asif Ahmed, All rights</p>
+
+               <nav aria-label="footer menu">
+                <ul role="menubar2" id="menubar2" aria-label="footer menu">
+                    <li role="none">
+                        <a href="https://www.facebook.com/asif.ahmed19/"  target= "_blank" class="nav-link" role="menuitem">
+                           <i class="fab fa-facebook footer-icon"></i> 
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="#" target= "_blank" class="nav-link" role="menuitem">
+                            <i class="fab fa-instagram footer-icon"></i>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="https://github.com/Asif-Ahmed-1927" target= "_blank"  class="nav-link" role="menuitem">
+                            <i class="fab fa-github footer-icon"></i>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="https://www.linkedin.com/in/asif-ahmed-122b11160/" target= "_blank" class="nav-link" role="menuitem">
+                            <i class="fab fa-linkedin footer-icon"></i>t</a>
+                    </li>
+                    <li role="none">
+                        <a href="https://twitter.com/Asif_Ahmed_1927" target= "_blank"  class="nav-link" role="menuitem">
+                            <i class="fab fa-twitter footer-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+    
+            </nav>
+
+           </footer>
+
+
+           <!--footer ends from here-->
+
 
 </body>
 </html>
